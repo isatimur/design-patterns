@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by isati on 12.02.2017.
+ * Created by isatimur on 12.02.2017.
+ * Let's create a required slot of parameters to get offers from avia companies.
+ * Currently we set only required number of fields so if any of it is null then we should throw a <code>IllegalArgumentException.class</code>
  */
 public class AviaOffersRequest {
     private final String pointOfSaleAviaOffers;
@@ -78,6 +80,11 @@ public class AviaOffersRequest {
         this.version = version;
     }
 
+    /**
+     * toString()
+     *
+     * @return String description of fields
+     */
     @Override
     public String toString() {
         return "AviaOffers{" +

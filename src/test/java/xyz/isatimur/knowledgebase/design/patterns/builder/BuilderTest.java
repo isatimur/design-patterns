@@ -7,7 +7,8 @@ import java.util.Arrays;
 import static org.junit.Assert.assertTrue;
 
 /**
- * Created by isati on 12.02.2017.
+ * Created by isatimur on 12.02.2017.
+ * Test for builder pattern on two cases that everything is fine and that illegal number of arguments initialized.
  */
 public class BuilderTest {
 
