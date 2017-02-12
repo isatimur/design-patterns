@@ -62,6 +62,8 @@ public class AviaOffersRequest {
 
 
         public AviaOffersRequest build() {
+            if (pointOfSaleAviaOffers == null || partySeller == null || parameters == null || travelers == null || queryOffers == null || policies == null || version == null)
+                throw new IllegalArgumentException();
             return new AviaOffersRequest(this.pointOfSaleAviaOffers, this.partySeller, this.parameters, this.travelers, this.queryOffers, this.policies, this.version);
         }
     }
